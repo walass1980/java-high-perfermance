@@ -9,5 +9,6 @@ public class Example3 {
         // Add elements to the Vector
         luckyNumbers.add(8);
         luckyNumbers.add(19);
+        luckyNumbers.add(24);
     }
 }
