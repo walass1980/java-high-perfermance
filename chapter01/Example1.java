@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.List;
 
-public class Example2 {
+public class Example1 {
     public static void main(String[] args) {
         // Create a LinkedList of strings
         List<String> petNames = new LinkedList<>();
