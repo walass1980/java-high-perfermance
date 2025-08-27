@@ -13,7 +13,7 @@ public class Example8 {
         while (!transactionStack.isEmpty()) {
             double transactionAmount = transactionStack.pop();
             // Process the transaction (e.g., update account balance)
-            System.out.println("Transction: " + transactionAmount);
+            System.out.println("Transaction: " + transactionAmount);
         }
         
     }
