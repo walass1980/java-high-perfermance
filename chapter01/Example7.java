@@ -9,3 +9,11 @@ class TreeNode {
         this.right = null;
     }
 }
+
+class Example7BinarySearchTree {
+    private TreeNode root;
+
+    public Example7BinarySearchTree() {
+        root = null;
+    }
+}
