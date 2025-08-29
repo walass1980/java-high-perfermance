@@ -2,6 +2,7 @@
 // Suffient code to illustrate the points made in 
 // chapter 3.
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AutoPartEfficient {
@@ -11,6 +12,11 @@ public class AutoPartEfficient {
     }
 
     private static List<String> getAutoParts() {
-        // No
+        // No implemented; provided for structure.
+        return new ArrayList<>();
+    }
+
+    private static void processtoParts(List<String> parts) {
+        // No implemented; provided for structure.
     }
 }
