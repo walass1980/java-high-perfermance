@@ -7,7 +7,17 @@ import java.util.Scanner;
 
 public class GuessingGameEfficient  {
     public static void main(String[] args) {
-        
+        int secretNumber = generateSecretNumber();
+        int userrGess;
+
+        do {
+            userrGess = getUserGuess();
+            if(userrGess != secretNumber) {
+                System.err.println("Try again");
+            }
+        } while (userrGess != secretNumber);
+
+        System.err.println("You Guessed the secret number:" + secretNumber);
     }
 
     private static int generateSecretNumber() {
