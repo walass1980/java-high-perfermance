@@ -1,13 +1,14 @@
 
 import java.util.Queue;
+import java.util.LinkedList;
 
 public class DBConnectObjectPool {
     private final Queue<DBConnect> pool;
     private final int maxSize;
     
     public DBConnectObjectPool(int size) {
-        this.pool = pool;
-        this.maxSize = maxSize;
+        this.maxSize = size;
+        this.pool = new LinkedList<>();
     }
 
     public synchronized DBConnnect getConnection() {
