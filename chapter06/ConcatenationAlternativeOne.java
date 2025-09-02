@@ -7,10 +7,10 @@ public class ConcatenationAlternativeOne {
 
     // Append strings
     myStringBuilder.append("java");
-    myStringBuilder.append("is");
-    myStringBuilder.append("my");
-    myStringBuilder.append("dog's");
-    myStringBuilder.append("name.");
+    myStringBuilder.append(" is");
+    myStringBuilder.append(" my");
+    myStringBuilder.append(" dog's");
+    myStringBuilder.append(" name.");
 
     // Convert StringBuilder to String
     String result = myStringBuilder.toString();
