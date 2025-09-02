@@ -1,5 +1,3 @@
-package chapter03;
-
 public class DBConnect {
     static int dbConnectionCount = 0;
     private int dbConnectID;
