@@ -9,7 +9,7 @@ public class MyCounter {
         return count;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException{
         MyCounter counter = new MyCounter();
 
         Thread t1 = new Thread(() -> {
