@@ -24,6 +24,17 @@ public class CH12AsyncFileReadExample {
             while (!result.isDone()) {
                 System.out.println("Processing something else while reading input...");
             }
+
+            // Check how many bytes were read
+            int bytesRead = result.get();
+            System.out.println(bytesRead + " bytes read");
+
+            // Output the read data
+            buffer.flip();
+            byte[] data = new byte[bytesRead];
+            buffer.get(data);
+            System.out.println("Read data: " + new String(data));
+            
         } catch (Exception e) {
             System.err.println("Error encountered " + e.getMessage());
         }
