@@ -12,9 +12,14 @@ public class CH12BufferedReadWriteZxample {
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFilePath));
              BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilePath))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    writer.write(line);
+                    writer.newLine(); // Write a newline character after each line
+                }
             
         } catch (Exception e) {
-            // TODO: handle exception
+            System.err.println("An error occurred: " + e.getMessage());
         }
     }
 }
