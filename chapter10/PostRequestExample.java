@@ -17,6 +17,8 @@ public class PostRequestExample {
 
         try {
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            System.out.println("Status Code: " + response.statusCode());
+            System.out.println("Response Body: \n " + response.body());
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
