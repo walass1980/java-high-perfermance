@@ -1,5 +1,3 @@
-package chapter11;
-
 import java.nio.ByteBuffer;
 import java.nio.channels.AsynchronousFileChannel;
 import java.nio.file.Path;
@@ -34,7 +32,7 @@ public class CH12AsyncFileReadExample {
             byte[] data = new byte[bytesRead];
             buffer.get(data);
             System.out.println("Read data: " + new String(data));
-            
+
         } catch (Exception e) {
             System.err.println("Error encountered " + e.getMessage());
         }
